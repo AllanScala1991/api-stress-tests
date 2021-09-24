@@ -1,9 +1,14 @@
 {
   "name": "api-stress-tests",
-  "version": "1.0.1",
-  "main": "index.ts",
+  "version": "1.0.2",
+  "main": "dist/index.js",
   "license": "MIT",
+  "publishConfig": {
+    "source": "dist/index.js",
+    "main": "dist/index.js"
+  },
   "scripts": {
+    "build": "tsc && cp -r ./types/* ./dist/",
     "start": "ts-node-dev src/index.ts"
   },
   "devDependencies": {
@@ -19,5 +24,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AllanScala1991/api-stress-tests"
-  }
+  },
+  "author": "Allan Scala <allanscala@gmail.com>"
 }
