@@ -1,0 +1,19 @@
+{
+  "name": "api-stress",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev src/index.ts"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^16.9.6",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "colors": "^1.4.0"
+  }
+}
